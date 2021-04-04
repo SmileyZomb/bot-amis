@@ -701,6 +701,7 @@ div.unread-mentions-indicator-bottom {
     background: var(--background-image) !important;
     background-size: cover !important;
     animation: var(--custom_background) 5s cubic-bezier(1,0,0,1) infinite;
+    transition: background .5s;
 }
 
 .appMount-3lHmkl {
@@ -719,6 +720,7 @@ div.unread-mentions-indicator-bottom {
     background: var(--background-image) !important;
     background-size: cover !important;
     animation: var(--custom_background) var(--time_background, 5s) cubic-bezier(1,0,0,1) infinite;
+    transition: background .5s;
 }
 
 .typeWindows-1za-n7 {
