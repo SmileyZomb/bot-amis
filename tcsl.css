@@ -700,7 +700,7 @@ div.unread-mentions-indicator-bottom {
 [class~=app] {
     background: var(--background-image) !important;
     background-size: cover !important;
-    animation: background 3s linear infinite;
+    animation: var(--custom_background) 3s linear infinite;
 }
 
 .appMount-3lHmkl {
@@ -718,6 +718,7 @@ div.unread-mentions-indicator-bottom {
     width: 100vw;
     background: var(--background-image) !important;
     background-size: cover !important;
+    animation: var(--custom_background) 3s linear infinite;
 }
 
 .typeWindows-1za-n7 {
@@ -754,7 +755,7 @@ div.unread-mentions-indicator-bottom {
     }
 }
 
-@keyframes background {
+@keyframes fade {
   0% { --background-image: #f99; }
   33% { --background-image: #9f9; }  
   67% { --background-image: #99f; }
