@@ -755,7 +755,7 @@ div.unread-mentions-indicator-bottom {
     }
 }
 
-@keyframes background {
+@keyframes slide {
   25% { --background-image: var(--first-background, #f99); }
   50% { --background-image: var(--second-background, #9f9); }  
   75% { --background-image: var(--third-background, #99f); }
