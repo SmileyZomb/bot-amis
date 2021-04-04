@@ -718,7 +718,7 @@ div.unread-mentions-indicator-bottom {
     width: 100vw;
     background: var(--background-image) !important;
     background-size: cover !important;
-    animation: var(--custom_background) 5s cubic-bezier(1,0,0,1) infinite;
+    animation: var(--custom_background) var(--time_background, 5s) cubic-bezier(1,0,0,1) infinite;
 }
 
 .typeWindows-1za-n7 {
@@ -755,11 +755,11 @@ div.unread-mentions-indicator-bottom {
     }
 }
 
-@keyframes fade {
-  0% { --background-image: #f99; }
-  33% { --background-image: #9f9; }  
-  67% { --background-image: #99f; }
-  100% { --background-image: #f99; }
+@keyframes background {
+  0% { --background-image: var(--first-background, #f99); }
+  33% { --background-image: var(--second-background, #9f9); }  
+  67% { --background-image: var(--third-background, #99f); }
+  100% { --background-image: var(--first-background, #f99); }
 }
 
 .theme-dark .container-1ETFDs .homeButton-2Cw51C {
