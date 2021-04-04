@@ -700,6 +700,7 @@ div.unread-mentions-indicator-bottom {
 [class~=app] {
     background: var(--background-image) !important;
     background-size: cover !important;
+    animation: background 3s linear infinite;
 }
 
 .appMount-3lHmkl {
@@ -751,6 +752,13 @@ div.unread-mentions-indicator-bottom {
         -ms-filter: hue-rotate(360deg);
         filter: hue-rotate(360deg);
     }
+}
+
+@keyframes background {
+  0% { --background-image: #f99; }
+  33% { --background-image: #9f9; }  
+  67% { --background-image: #99f; }
+  100% { --background-image: #f99; }
 }
 
 .theme-dark .container-1ETFDs .homeButton-2Cw51C {
